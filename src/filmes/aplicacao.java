@@ -22,7 +22,7 @@ public class aplicacao {
             switch (opcao) {
                 case 1:
                     System.out.println("Digite o título do filme:");
-                    filme.setTitulo(in.next());
+                    String nomeFilme = in.nextLine();
                     System.out.println("Digite o gênero do filme:");
                     filme.setGenero(in.next());
                     System.out.println("Digite a classificação do filme:");
@@ -35,13 +35,13 @@ public class aplicacao {
 
                 case 2:
                     System.out.println("Digite o título do filme a ser removido:");
-                    filme.setTitulo(in.next());
-                    listaFilmes.remover(filme);
+                    nomeFilme = in.nextLine();
+                    listaFilmes.remover(nomeFilme);
                     break;
 
                 case 3:
                     System.out.println("Digite o título do filme a ser buscado:");
-                    filme.setTitulo(in.next());
+                    nomeFilme = in.nextLine();
                     listaFilmes.buscar(filme);
                     break;
 
